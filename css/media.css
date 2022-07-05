@@ -105,12 +105,12 @@
 		.team-sec .slick-prev{
 			left: auto;
 			top: -58px;
-			right:80px;	
+			right:100px;	
 			}
 		.team-sec .slick-next{
 			left: auto;
 			top: -58px;
-			right: 50px;
+			right: 60px;
 		}
 
 	}

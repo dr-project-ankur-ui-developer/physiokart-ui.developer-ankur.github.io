@@ -76,12 +76,12 @@
 	    .team-sec .slick-prev{
 			left: auto;
 			top: -58px;
-			right:80px;	
+			right:60px;	
 			}
 		.team-sec .slick-next{
 			left: auto;
 			top: -58px;
-			right: 50px;
+			right: 30px;
 		}
 		.sub-footer {
 		    padding: 3rem 8% 1rem;
@@ -101,3 +101,16 @@
 			
 		}
     }
+	@media screen and (min-width: 320px){
+		.team-sec .slick-prev{
+			left: auto;
+			top: -58px;
+			right:80px;	
+			}
+		.team-sec .slick-next{
+			left: auto;
+			top: -58px;
+			right: 50px;
+		}
+
+	}

@@ -91,14 +91,17 @@
 		}
 		.book-appo-btn{
 			position: fixed;
-			
 			top:auto;
 			bottom: .1px;
 			left: 0;
 			writing-mode: horizontal-tb;
 			text-align: center;
-			z-index: 999;
-			
+			z-index: 999	
+		}
+		.team-sec .slick-prev:before,
+		.team-sec .slick-next:before {
+			padding:4px 8px;
+			font-size: 22px;	
 		}
     }
 	@media screen and (max-width: 320px){
@@ -112,5 +115,6 @@
 			top: -58px;
 			right: 60px;
 		}
-
+	
+		
 	}

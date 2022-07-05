@@ -1,0 +1,103 @@
+/* @media screen and (max-width: 1200px)(min-width: 1024px){
+
+	
+}
+
+@media screen and (max-width: 1024px)(min-width: 992px){
+
+	
+	}
+
+@media screen and (max-width: 992px){
+
+	} */
+@media screen and (min-width: 769px){
+	#drop_down{
+		opacity: 0;
+		visibility: hidden;
+		width: 270px;
+		
+	}
+	.dropdown:hover #drop_down{
+		opacity: 1;
+		visibility: visible;
+	}
+	.navbar-nav{
+		align-items: center;
+	}
+
+}
+@media screen and (max-width: 768px){
+	.offcanvas.offcanvas-end {
+	   
+	    padding-top: 100px;
+	    background-color: #1bbde3ad;
+	    height: 100vh;
+		z-index: 99;
+	}
+	.offcanvas.offcanvas-end .navbar-nav .nav-link{
+		border-bottom: 1px solid #fff;
+		padding-block: 1.3rem;
+	}
+	.offcanvas.offcanvas-end .navbar-nav:last-child{
+		border-bottom: 0px;
+	}
+	.offcanvas.offcanvas-end .navbar-nav .nav-item .dropdown-toggle{
+		display: flex;
+		justify-content: space-between;	
+	}
+	.book-btn{
+		margin-top: 2rem;
+		background: transparent;
+		border: 2px solid #fff;
+		align-items: center;
+		border-radius: 0px!important;
+	}
+	#drop_down{
+		margin-top: -6px;
+	}
+	.copy-right {flex-flow:column-reverse;text-align: center;gap:.5rem}
+	
+}	
+
+
+@media screen and (max-width: 592px){
+		.frist-member-details{
+			display: flex;
+			justify-content: center;
+			flex-flow: column;
+		}
+		.sub-footer{flex-flow: column;align-items: center}
+	    .provied-item ul li{width:49%;margin-bottom: 10px;}
+	    .provied-item ul .last{display:flex!important}
+	    .portfilo-img ul li{width: 93%;margin-left: auto;margin-right: auto;}
+	    .dr-pro-img{ margin:45px 0px 20px;}
+	    .dr-pro-img .appo{ bottom: 15px;}
+	    .team-sec .slick-prev{
+			left: auto;
+			top: -58px;
+			right:60px;	
+			}
+		.team-sec .slick-next{
+			left: auto;
+			top: -58px;
+			right: 25px;
+		}
+		.sub-footer {
+		    padding: 3rem 8% 1rem;
+		}
+		.book-btn{
+			display: none;
+		}
+		.book-appo-btn{
+			position: fixed;
+			
+			top:auto;
+			bottom: .1px;
+			left: 0;
+			writing-mode: horizontal-tb;
+			text-align: center;
+			z-index: 999;
+			
+		}
+    }

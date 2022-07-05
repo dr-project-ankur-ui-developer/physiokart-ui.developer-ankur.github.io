@@ -101,7 +101,7 @@
 			
 		}
     }
-	@media screen and (min-width: 320px){
+	@media screen and (max-width: 320px){
 		.team-sec .slick-prev{
 			left: auto;
 			top: -58px;

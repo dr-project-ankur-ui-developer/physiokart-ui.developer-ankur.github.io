@@ -10,7 +10,6 @@
       <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
        <!----slider--link---file----->
       <link rel="stylesheet" type="text/css" href="css/slick.css">
-      <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
       <link rel="stylesheet" type="text/css" href="css/style.css">
       <link rel="stylesheet" type="text/css" href="css/media.css">
    </head>
@@ -65,7 +64,7 @@
                      </a>
                   </li>
                   <li class="nav-item book-btn ms-lg-4">
-                     <a href="#" class="nav-link border-0"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+                     <a href="#" class="nav-link border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <span>Book Now</span>
                      </a>
                   </li>
@@ -79,80 +78,71 @@
 
 
 
-      <!-- ================Modal ========================-->
-         <section class="book-popup">
-         <div class="modal fade pe-0" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="overflow-y:auto!important">
-           <div class="modal-dialog modal-xl">
-
-             <div class="modal-content">
-                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-
+<!-- ================Modal ========================-->
+   <section class="book-popup">
+      <div class="modal fade pe-0" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="overflow-y:auto!important">
+         <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                <div class="modal-body">
-                   
                   <div class="row">
-
                      <div class="col-lg-5 col-md-4 d-none d-md-block sile-img ">
                         <img src="img/online-diagnosis-online-medical-services-sesame.jpg">
-                        
                      </div>
                      <div class="col-lg-7 col-md-8 form-fill">
                           <h4 class="text-center pb-3" style="text-transform: uppercase;color:#1bbde3">Appointment Form</h4>
                         <form class="forms-sample" action="#" method="post" id="myfrm" name="myfrm">
-                        <div class="book-appo-form row">
-                           <div class="col-sm-12">
-                              <label for="name">Patient Name</label>
-                              <input id="name" type="text" placeholder="Full Name" name="name" autocomplete="off" required="" class="form-control">
-                           </div>
-                           <div class="col-sm-12">
-                                <label for="name">Patient Contact</label>
-                                <input id="Last-Name" type="text" placeholder="Contact" autocomplete="off" name="contact" required="" class="form-control">
-                           </div>
-                           <div class="col-md-6">
-                              <label for="date">Appointment Date</label>
-                              <input id="date" type="date" placeholder="" name="date" required="" class="form-control" min="2022-03-12" max="2025-08-31">
-                           </div>
-                           <div class="col-md-6">
-                             <label for="time">Appointment Time</label>
-                             <input id="time" type="time" placeholder="" name="time" required="" class="form-control">
-                           </div>
-                           <div class="col-md-6">
-                              <label for="add">Gender</label>
-                              <select class="form-select" name="gender" id="gender">
-                                <option>Male</option>
-                                <option>Female</option>
-                              </select>
-                           </div>
-                           <div class="col-md-6">
-                               <label for="email">Age Of Patient</label>
-                               <input id="age" type="text" placeholder="" name="age" autocomplete="off" required="" class="form-control">
-                           </div>
-                           <div class="col-sm-12">
-                              <label for="add">Address</label>
-                              <input id="add" type="text" placeholder="Add." name="add" autocomplete="off" required="" class="form-control">
-                           </div>
-                           <div class="col-sm-12">
-                               <label for="email">Email</label>
-                               <input id="email" type="email" placeholder=" Email" name="email" autocomplete="off" required="" class="form-control">
-                           </div>
-                           <div class="col-sm-12">
-                              <input type="hidden"  name="rid" value="<?php echo $ress['mail']; ?>"> 
-                              <button type="submit" name="btn" id="btn" class="btn-model mt-4">Submit</button>  
-                           </div>
-                        </div>                                         
+                           <div class="book-appo-form row">
+                              <div class="col-sm-12">
+                                 <label for="name">Patient Name</label>
+                                 <input id="name" type="text" placeholder="Full Name" name="name" autocomplete="off" required="" class="form-control">
+                              </div>
+                              <div class="col-sm-12">
+                                   <label for="name">Patient Contact</label>
+                                   <input id="Last-Name" type="text" placeholder="Contact" autocomplete="off" name="contact" required="" class="form-control">
+                              </div>
+                              <div class="col-md-6">
+                                 <label for="date">Appointment Date</label>
+                                 <input id="date" type="date" placeholder="" name="date" required="" class="form-control" min="2022-03-12" max="2025-08-31">
+                              </div>
+                              <div class="col-md-6">
+                                <label for="time">Appointment Time</label>
+                                <input id="time" type="time" placeholder="" name="time" required="" class="form-control">
+                              </div>
+                              <div class="col-md-6">
+                                 <label for="add">Gender</label>
+                                 <select class="form-select" name="gender" id="gender">
+                                   <option>Male</option>
+                                   <option>Female</option>
+                                 </select>
+                              </div>
+                              <div class="col-md-6">
+                                  <label for="email">Age Of Patient</label>
+                                  <input id="age" type="text" placeholder="" name="age" autocomplete="off" required="" class="form-control">
+                              </div>
+                              <div class="col-sm-12">
+                                 <label for="add">Address</label>
+                                 <input id="add" type="text" placeholder="Add." name="add" autocomplete="off" required="" class="form-control">
+                              </div>
+                              <div class="col-sm-12">
+                                  <label for="email">Email</label>
+                                  <input id="email" type="email" placeholder=" Email" name="email" autocomplete="off" required="" class="form-control">
+                              </div>
+                              <div class="col-sm-12">
+                                 <input type="hidden"  name="rid" value="<?php echo $ress['mail']; ?>"> 
+                                 <button type="submit" name="btn" id="btn" class="btn-model mt-4">Submit</button>  
+                              </div>
+                           </div>                                         
                         </form>
-                     </div>
                      </div>
                   </div>
                </div>
-             </div>
-           </div>
+            </div>
          </div>
-      </section>
-       <!-- ================Modal ============End============-->
-
-
-
-
+      </div>
+   </div>
+</section>
+<!-- ================Modal ============End============-->
 
 <!--=========================================
    ===========banner-crousle=======start====
@@ -214,34 +204,31 @@
             </div>
 
             <!------carousel-prev---next---------->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                 <span class="visually-hidden">Previous</span>
+               </button>
+               <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                 <span class="visually-hidden">Next</span>
+               </button>
             <!------carousel-indicators---------->
-            <div class="carousel-indicators">
-               <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-               <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
-               <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
-               <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="3" aria-label="Slide 4"></button>
-              <!--  <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="4" aria-label="Slide 5"></button> -->
-             </div>
+               <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                 <!--  <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="4" aria-label="Slide 5"></button> -->
+               </div>
           </div>
 
-         <!--=========================================
-            ===========banner-crousle=======End====
-                  ===========================================---->
-
-
+      <!--=========================================
+         ===========banner-crousle=======End====
+               ===========================================---->
 
                   <!---===========whats-app-button===============--->
-                        <a href="#" class="float" target="_blank"><i class="fa fa-whatsapp my-float"></i></a>
+                     <a href="#" class="float" target="_blank"><i class="fa fa-whatsapp my-float"></i></a>
                   <!---===========whats-app-button===============--->
-
 
 <!--=========================================
    ===========Our-Team======start====
@@ -295,7 +282,7 @@
                   	<h5>Dr. Mrocica</h5>
                   	<span>MBBS, MD, TDD</span>
                   </div>
-                 <div class="frist-member-details pt-lg-5">
+                  <div class="frist-member-details pt-lg-5">
                      <h5>Fhysio Theropest</h5>
                      <p>I am Mrocica. I am Fhysio Theropest and U.S.A Goldmeldist.</p>
                      <h6><i class="bi bi-clock"></i> Metting: 12:00pm - 3:30pm </h6>
@@ -344,7 +331,6 @@
                         </li>
                      </ul>
                   </div>
-                
                </div>
             </div>
          </section>
@@ -363,7 +349,7 @@
                   <div class="container-fluid partner">
                      <div class="team-heading team-space text-center ">
                         <span>Partner</span>
-                        <h2 class=" mx-auto" style="width:fit-content;">Our Partner</h2>
+                        <h2 class="mx-auto" style="width:fit-content;">Our Partner</h2>
                      </div>
                      <div class="responsive-partner slider mx-auto mt-5">
                         <div>
@@ -392,10 +378,9 @@
                         </div>
                      </div>
                   </div>
-
-                  <!--=========================================
-                     ===========Our-Partner======End====
-                           ===========================================---->
+            <!--=========================================
+               ===========Our-Partner======End====
+                     ===========================================---->
 
 
 <!--=========================================
@@ -403,7 +388,7 @@
            ===========================================---->
 
       <section>
-        <div class="container-fluid b-form">
+         <div class="container-fluid b-form">
             <div class="row justify-content-between">
                 <div class="col-md-6 offset-lg-1">
                     <div class="provied-item">
@@ -429,23 +414,23 @@
                     <div class="side-form" id="side-form">
                         <div class="field">
                             <form>
-                                 <input type="text" id="name" class="form-control" placeholder="Name" name="name">
-                                 <input type="text" id="phone" class="form-control" placeholder="Phone" name="Phone Number">
-                                 <input type="email" id="email" class="form-control" placeholder="Email">
-                                 <select type="select" id="der" class="form-select">
+                                 <input type="text" id="name" class="form-control" placeholder="Name" name="name" require="">
+                                 <input type="text" id="phone" class="form-control" placeholder="Phone" name="Phone Number" require="">
+                                 <input type="email" id="email" class="form-control" placeholder="Email" require="">
+                                 <select type="select" id="der" class="form-select" require="">
                                     <option>Select Department</option>
                                     <option>Cardiology</option>
                                     <option>Oncology</option>
                                     <option>Dental Care</option>
                                     <option>Eye Care</option>
                                  </select>
-                                 <select type="select" id="c-doc" class="form-select">
+                                 <select type="select" id="c-doc" class="form-select" require="">
                                     <option>Choose Doctor by Name</option>
                                     <option>Doe</option>
                                     <option>Alex Doe</option>
                                     <option>Chris Doe</option>
                                  </select>
-                                <input type="date" id="date" class="form-control">
+                                <input type="date" id="date" placeholder="05/07/2022" class="form-control" require="">
                            </form>
                         </div>
                         <button type="submit" class="appoint-btn bg-color btn">APPOINTMENT</button>
@@ -478,51 +463,54 @@
             <!----Main--footer-start-->
                <section class="main-footer">
                   <div class="row">
-                        <div class="col-lg-3 col-md-4 col-sm-6 mt-4 about">
-                           <h4>About us</h4>
-                           <ul>
-                              <li><a href="#"><i class="ti ti-caret-right"></i> <span>Our Team</span></a></li>
-                              <li><a href="#"><i class="ti ti-caret-right"></i> <span>Doctor speak</span></a></li>
-                              <li><a href="#"><i class="ti ti-caret-right"></i> <span>FAQ</span></a></li>
-                              <li><a href="#"><i class="ti ti-caret-right"></i> <span>Testimonilas</span></a></li>
-                           </ul>
+                     <div class="col-lg-3 col-md-4 col-sm-6 mt-4 about">
+                        <h4>About us</h4>
+                        <ul>
+                           <li><a href="#"><i class="ti ti-caret-right"></i> <span>Our Team</span></a></li>
+                           <li><a href="#"><i class="ti ti-caret-right"></i> <span>Doctor speak</span></a></li>
+                           <li><a href="#"><i class="ti ti-caret-right"></i> <span>FAQ</span></a></li>
+                           <li><a href="#"><i class="ti ti-caret-right"></i> <span>Testimonilas</span></a></li>
+                        </ul>
+                     </div>
+                     <div class="col-lg-3 col-md-4 col-sm-6 mt-4 service">
+                        <h4>Service</h4>
+                        <ul>
+                           <li><a href="#"><i class="ti ti-caret-right"></i> 
+                              <span>Fhysio Theropy</span></a>
+                           </li>
+                           <li><a href="#"><i class="ti ti-caret-right"></i> 
+                              <span>Traired Aetendenls</span></a>
+                           </li>
+                           <li><a href="#"><i class="ti ti-caret-right"></i>
+                              <span>Nursing</span></a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="col-lg-3 col-md-4 col-sm-6 mt-4 contact px-lg-0">
+                        <h4>Contact us</h4>
+                        <ul >
+                           <li>
+                              <a href="#"><i class="ti ti-map-pins"></i> <span> Street 238,52 tempor Donec ultricies mattis nulla risus tristique.</span></a>
+                           </li>
+                           <li><a href="#"><i class="ti ti-phone-pause"></i> <span>+01 23 456 7890</span></a>  </li>
+                              
+                                           
+                           <li><a href="#"><i class="ti ti-mail-opened"></i> <span>support@sitename.com</span></a></li>
+                           <li><a href="#"><i class="ti ti-world"></i> <span> Website:https://sktthemes.org</span></a></li>
+                        </ul>
+                     </div>
+                     <div class="col-lg-3 col-md-4 col-sm-6 mt-4">
+                        <h5>Subscribe to the newsletter </h5>
+                        <div class="news-felid">
+                           <input type="email" placeholder="Enter email" class="form control ">
+                           <i class="fa-solid fa-paper-plane"></i>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 mt-4 service">
-                           <h4>Service</h4>
-                           <ul>
-                              <li><a href="#"><i class="ti ti-caret-right"></i> 
-                                 <span>Fhysio Theropy</span></a></li>
-                              <li><a href="#"><i class="ti ti-caret-right"></i> 
-                           <span>Traired Aetendenls</span></a></li>
-                              <li><a href="#"><i class="ti ti-caret-right"></i> 
-<span>Nursing</span></a></li>
-                           </ul>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 mt-4 contact px-lg-0">
-                           <h4>Contact us</h4>
-                           <ul >
-                              <li>
-                                 <a href="#"><i class="ti ti-map-pins"></i> <span> Street 238,52 tempor Donec ultricies mattis nulla risus tristique.</span></a>
-                              </li>
-                              <li><a href="#"><i class="ti ti-phone-pause"></i> <span>+01 23 456 7890</span></a>  </li>
-                                 
-                                              
-                              <li><a href="#"><i class="ti ti-mail-opened"></i> <span>support@sitename.com</span></a></li>
-                              <li><a href="#"><i class="ti ti-world"></i> <span> Website:https://sktthemes.org</span></a></li>
-                           </ul>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 mt-4">
-                           <h5>Subscribe to the newsletter </h5>
-                           <div class="news-felid">
-                              <input type="email" placeholder="Enter email" class="form control ">
-                              <i class="fa-solid fa-paper-plane"></i>
-                           </div>
-                        </div>
-                        <hr>
+                     </div>
+                     <hr>
                   </div>
                   <div class="copy-right">
-                        <p class="mb-0">Copyright © 2022 Physio for All Limited. All rights reserved.</p>
-                        <p class="mb-0">Website design by <a href="https://www.webhut.org/" style="text-decoration: underline;">www.webhut.org</a></p>
+                     <p class="mb-0">Copyright © 2022 Physio for All Limited. All rights reserved.</p>
+                     <p class="mb-0">Website design by <a href="https://www.webhut.org/" style="text-decoration: underline;">www.webhut.org</a></p>
                   </div>
                </section>
      <!--=========================================
